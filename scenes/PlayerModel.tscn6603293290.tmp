@@ -971,9 +971,11 @@ target_position = Vector3(0, -100, 0)
 script = ExtResource("11_ifjn5")
 
 [node name="ass_sphere" type="CSGSphere3D" parent="Downcast"]
+visible = false
 radius = 0.25
 material = SubResource("StandardMaterial3D_hv8ys")
 
 [node name="target_sphere" type="CSGSphere3D" parent="Downcast"]
+visible = false
 material_override = SubResource("StandardMaterial3D_ifjn5")
 radius = 0.1

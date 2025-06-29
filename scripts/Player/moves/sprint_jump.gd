@@ -9,8 +9,9 @@ const JUMP_TIMING := 0.1421
 var jumped := false
 
 func _ready() -> void:
-	
 	animation = "sprint_jump_start"
+
+
 
 func check_relevance(_input : InputPackage):
 	# wait til animation ends, then switch to "midair"

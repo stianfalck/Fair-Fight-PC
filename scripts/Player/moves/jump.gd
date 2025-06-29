@@ -1,6 +1,9 @@
 extends MovementState
 class_name Jump
 
+const JUMP_TIMING := 0.18
+const TRANSITION_TIMING := 0.25
+
 var jump_velocity := 4.5
 
 func _ready() -> void:

@@ -1,0 +1,11 @@
+extends RayCast3D
+
+@onready var bone_attachment_3d: BoneAttachment3D = $"../Armature/Skeleton3D/BoneAttachment3D"
+@onready var target_sphere: CSGSphere3D = $target_sphere
+
+
+func _process(delta: float) -> void:
+	# attach downcast and ass_sphere at bone_att_3d, which is attached at the skeleton hip
+	global_position = bone_attachment_3d.global_position
+	# set target_sphere where downcast collides with.. anything below skeleton
+	target_sphere.global_position = get_collision_point()
