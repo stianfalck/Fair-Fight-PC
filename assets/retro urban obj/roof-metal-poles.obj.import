@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cfkma73vene2a"
+path="res://.godot/imported/roof-metal-poles.obj-5d35c6b9952daa4eaf6dc17c7ee12d3e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/roof-metal-poles.obj-5d35c6b9952daa4eaf6dc17c7ee12d3e.mesh"]
+
+source_file="res://assets/retro urban obj/roof-metal-poles.obj"
+dest_files=["res://.godot/imported/roof-metal-poles.obj-5d35c6b9952daa4eaf6dc17c7ee12d3e.mesh", "res://.godot/imported/roof-metal-poles.obj-5d35c6b9952daa4eaf6dc17c7ee12d3e.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

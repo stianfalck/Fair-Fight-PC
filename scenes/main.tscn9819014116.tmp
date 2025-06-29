@@ -1,0 +1,77 @@
+[gd_scene load_steps=14 format=3 uid="uid://pbljkjfd5ltj"]
+
+[ext_resource type="Script" uid="uid://dyuknj28c0a2d" path="res://scripts/Player/input.gd" id="1_0wfyh"]
+[ext_resource type="Script" uid="uid://dihqhbc2lwmf5" path="res://scripts/Player/player.gd" id="1_sugp2"]
+[ext_resource type="Script" uid="uid://bc4nl8qlaf5xd" path="res://scripts/Player/model.gd" id="2_sugp2"]
+[ext_resource type="Script" uid="uid://odkfs768mh5j" path="res://scripts/Player/moves/idle.gd" id="4_o6xl0"]
+[ext_resource type="Script" uid="uid://b2ambmf4q4mg5" path="res://scripts/Player/moves/run.gd" id="5_tipki"]
+[ext_resource type="Script" uid="uid://kxs0f8e60yim" path="res://scripts/Player/moves/jump.gd" id="6_85g3d"]
+[ext_resource type="Script" uid="uid://dp566yn8h3hpl" path="res://scripts/Player/moves/fall.gd" id="7_choun"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_sgp6g"]
+sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
+ground_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
+
+[sub_resource type="Sky" id="Sky_o5qli"]
+sky_material = SubResource("ProceduralSkyMaterial_sgp6g")
+
+[sub_resource type="Environment" id="Environment_0wfyh"]
+background_mode = 2
+sky = SubResource("Sky_o5qli")
+tonemap_mode = 2
+glow_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sugp2"]
+albedo_color = Color(0.913725, 0.788235, 0.529412, 1)
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_jyhfs"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_tbgi4"]
+
+[node name="Level" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_0wfyh")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 0, 0)
+shadow_enabled = true
+
+[node name="Terrain" type="Node3D" parent="."]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Terrain"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0737305, 0)
+use_collision = true
+size = Vector3(10, 0.2, 10)
+material = SubResource("StandardMaterial3D_sugp2")
+
+[node name="Player" type="CharacterBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.85504, 0)
+script = ExtResource("1_sugp2")
+
+[node name="Collider" type="CollisionShape3D" parent="Player"]
+shape = SubResource("CapsuleShape3D_jyhfs")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Player"]
+mesh = SubResource("CapsuleMesh_tbgi4")
+
+[node name="Camera3D" type="Camera3D" parent="Player"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+
+[node name="Input" type="Node" parent="Player"]
+script = ExtResource("1_0wfyh")
+
+[node name="Model" type="Node" parent="Player"]
+script = ExtResource("2_sugp2")
+
+[node name="Idle" type="Node" parent="Player/Model"]
+script = ExtResource("4_o6xl0")
+
+[node name="Run" type="Node" parent="Player/Model"]
+script = ExtResource("5_tipki")
+
+[node name="Jump" type="Node" parent="Player/Model"]
+script = ExtResource("6_85g3d")
+
+[node name="Fall" type="Node" parent="Player/Model"]
+script = ExtResource("7_choun")

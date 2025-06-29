@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b7v0cwgct1tcq"
+path="res://.godot/imported/detail-barrier-strong-damaged.obj-313cc9d92b651385a08bfa3eb73237ad.mesh"
+
+[deps]
+
+files=["res://.godot/imported/detail-barrier-strong-damaged.obj-313cc9d92b651385a08bfa3eb73237ad.mesh"]
+
+source_file="res://assets/retro urban obj/detail-barrier-strong-damaged.obj"
+dest_files=["res://.godot/imported/detail-barrier-strong-damaged.obj-313cc9d92b651385a08bfa3eb73237ad.mesh", "res://.godot/imported/detail-barrier-strong-damaged.obj-313cc9d92b651385a08bfa3eb73237ad.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cj0cw7jfhews1"
+path="res://.godot/imported/truck-green.obj-3bab2cf25eae4209b7f6c144637f24f5.mesh"
+
+[deps]
+
+files=["res://.godot/imported/truck-green.obj-3bab2cf25eae4209b7f6c144637f24f5.mesh"]
+
+source_file="res://assets/retro urban obj/truck-green.obj"
+dest_files=["res://.godot/imported/truck-green.obj-3bab2cf25eae4209b7f6c144637f24f5.mesh", "res://.godot/imported/truck-green.obj-3bab2cf25eae4209b7f6c144637f24f5.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

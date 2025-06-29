@@ -1,0 +1,10 @@
+CSGBox3D
+Node
+AnimationPlayer
+AnimationTree
+Node3D
+Camera3D
+RayCast3D
+MeshInstance3D
+CollisionShape3D
+CharacterBody3D
