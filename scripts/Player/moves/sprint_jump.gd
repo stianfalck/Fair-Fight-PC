@@ -4,7 +4,7 @@ class_name SprintJump
 var jump_velocity := 5.5
 
 const TRANSISTION_TIMING := 0.4167
-const JUMP_TIMING := 0.1421
+const JUMP_TIMING := 0.11
 
 var jumped := false
 

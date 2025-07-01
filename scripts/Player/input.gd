@@ -39,9 +39,9 @@ func gather_input() -> InputPackage:
 			new_input.actions.append("jump")
 
 	
-	if new_input.input_direction == Vector2.ZERO and last_velocity != Vector2.ZERO:
-		new_input.actions.append("halt")
-	last_velocity = new_input.input_direction
+	#if new_input.input_direction == Vector2.ZERO and last_velocity != Vector2.ZERO:
+		#new_input.actions.append("halt")
+	#last_velocity = new_input.input_direction
 
 
 	if new_input.actions.is_empty():

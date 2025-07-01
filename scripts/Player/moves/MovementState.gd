@@ -2,26 +2,26 @@ extends Node
 class_name MovementState
 
 var player : CharacterBody3D
-
 var direction : Vector3
-
 var enter_state_timestamp : float
-
 var animation : String
-
+var move_name : String
 var animation_done : bool
-
 var lerp_speed := 10.0
+var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
+
 
 
 static var moves_weight : Dictionary = {
 	"idle" : 1.0,
-	"halt" : 1.5,
+	#"halt" : 1.5,
 	"run" : 2.0,
 	"sprint" : 3.0,
 	"jump": 10.0,
-	"sprint_jump" : 11.0,
-	"midair" : 15.0
+	"sprint_jump" : 10.0,
+	"midair" : 10.0,
+	"jump_landing" : 10.0,
+	"sprint_jump_landing" : 10.0
 }
 
 
@@ -43,10 +43,15 @@ func mark_enter_state():
 
 func get_progress():
 	var now = Time.get_unix_time_from_system()
-	return now
+	return now - enter_state_timestamp
 
 func works_longer_than(time : float) -> bool:
 	if get_progress() >= time:
+		return true
+	return false
+	
+func works_less_than(time : float) -> bool:
+	if get_progress() < time: 
 		return true
 	return false
 
@@ -69,5 +74,6 @@ func on_enter_state():
 	
 	
 func on_exit_state():
+	#print(player.velocity)
 	pass
 	

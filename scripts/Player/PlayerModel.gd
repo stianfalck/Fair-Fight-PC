@@ -6,8 +6,12 @@ class_name PlayerModel
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
 @onready var camera_controller: CameraController = $"../CameraMount"
 
+@onready var downcast: RayCast3D = $Downcast
+@onready var downcast_attachment: BoneAttachment3D = $Armature/Skeleton3D/DowncastAttachment
 
-var currentMoveState : MovementState
+
+
+var current_move_state : MovementState
 
 var lerp_speed := 10.0
 
@@ -19,13 +23,15 @@ var lerp_speed := 10.0
 	"sprint" : $States/Sprint,
 	"jump" : $States/Jump,
 	"midair" : $States/Midair,
-	"halt" : $States/Halt,
-	"sprint_jump" : $States/SprintJump
+	#"halt" : $States/Halt,
+	"sprint_jump" : $States/SprintJump,
+	"jump_landing" : $States/JumpLanding,
+	"sprint_jump_landing" : $States/SprintJumpLanding
 }
 
 
 func _ready() -> void:
-	currentMoveState = moves["idle"]
+	current_move_state = moves["idle"]
 	for move in moves.values():
 		move.player = player
 
@@ -38,20 +44,24 @@ func update(input : InputPackage, delta : float):
 	camera_controller.update(input.mouse_delta, input.freelook, delta)
 	
 	if not player.is_on_floor():
-		currentMoveState = moves["jump"]
+		current_move_state = moves["jump"]
 	
-	var relevance = currentMoveState.check_relevance(input)
+	var relevance = current_move_state.check_relevance(input)
 	if relevance != "okay":
 		switch_to(relevance)
-	print("current state: ",currentMoveState.name)
-	currentMoveState.update(input, delta)
+	print("current state: ",current_move_state.name)
+	current_move_state.update(input, delta)
+	var floor_point = downcast.get_collision_point()
+	print("distance to gnd:")
+	print(downcast_attachment.global_position.distance_to(floor_point))
 	
 	input.queue_free()
 	
 	
 func switch_to(state : String):
-	currentMoveState.on_exit_state()
-	currentMoveState = moves[state]
-	currentMoveState.on_enter_state()
-	animation_player.play(currentMoveState.animation)
+	current_move_state.on_exit_state()
+	current_move_state = moves[state]
+	current_move_state.on_enter_state()
+	current_move_state.mark_enter_state()
+	animation_player.play(current_move_state.animation)
 	

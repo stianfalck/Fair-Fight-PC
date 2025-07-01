@@ -1,19 +1,31 @@
 extends MovementState
-class_name Fall
+class_name Midair
+
+@onready var downcast: RayCast3D = $"../../Downcast"
+@onready var downcast_attachment: BoneAttachment3D = $"../../Armature/Skeleton3D/DowncastAttachment"
+
+@export var land_thresh := 2
 
 func _ready() -> void:
 	animation = "midair"
 
 
-
 func check_relevance(input : InputPackage):
-	# if player is on floor, change state, else keep falling
-	if player.is_on_floor():
-		input.actions.sort_custom(sort_moves_by_weight)
-		return input.actions[0]
-	return "okay"
+	# if player is below landing threshold, change to landing state depending
+	# on horisontal velocity
+	var floor_point = downcast.get_collision_point()
+	print("distance to gnd:")
+	print(downcast_attachment.global_position.distance_to(floor_point))
+	if downcast_attachment.global_position.distance_to(floor_point) < land_thresh:
+		var xz_vel = player.velocity
+		xz_vel.y = 0.0
+		if xz_vel.length_squared() >= 10:
+			return "sprint_jump_landing"
+		return "jump_landing"
+	else:
+		return "okay"
 
 
 func update(input, delta):
-	player.velocity += player.get_gravity() * delta
+	player.velocity.y -= gravity * delta
 	player.move_and_slide()

@@ -4,9 +4,7 @@ res://assets/animations/general movement/anim_lib_gen_mov.res
 res://scenes/Player.tscn
 res://scenes/PlayerVisuals.tscn
 res://scenes/PlayerModel.tscn
-res://scripts/Player/moves/halt.gd
-res://scripts/Player/AnimationPlayer.gd
-res://scripts/Player/Downcast.gd
 res://scripts/Player/moves/sprint_jump.gd
-res://scripts/Player/moves/jump.gd
-res://assets/animations/general movement/run_jump_start.res
+res://scripts/Player/moves/MovementState.gd
+res://scripts/Player/moves/midair.gd
+res://scripts/Player/PlayerModel.gd

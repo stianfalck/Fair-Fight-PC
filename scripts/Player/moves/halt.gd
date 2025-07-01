@@ -1,10 +1,9 @@
 extends MovementState
 class_name Halt
 
-# General movement variables
-
 
 func check_relevance(input : InputPackage):
+	
 	var new_velocity = player.velocity
 	input.actions.sort_custom(sort_moves_by_weight)
 	if new_velocity == Vector3.ZERO:
