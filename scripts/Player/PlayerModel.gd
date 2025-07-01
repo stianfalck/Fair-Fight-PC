@@ -31,10 +31,12 @@ var lerp_speed := 10.0
 
 
 func _ready() -> void:
-	current_move_state = moves["idle"]
 	for move in moves.values():
 		move.player = player
-
+	if not player.is_on_floor():
+		current_move_state = moves["midair"]
+	else:
+		current_move_state = moves["idle"]
 	camera_controller.lerp_speed = lerp_speed
 	
 	
@@ -42,10 +44,7 @@ func _ready() -> void:
 
 func update(input : InputPackage, delta : float):
 	camera_controller.update(input.mouse_delta, input.freelook, delta)
-	
-	if not player.is_on_floor():
-		current_move_state = moves["jump"]
-	
+	print(current_move_state.animation)
 	var relevance = current_move_state.check_relevance(input)
 	if relevance != "okay":
 		switch_to(relevance)

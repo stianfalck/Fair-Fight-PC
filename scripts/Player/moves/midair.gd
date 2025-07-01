@@ -4,7 +4,7 @@ class_name Midair
 @onready var downcast: RayCast3D = $"../../Downcast"
 @onready var downcast_attachment: BoneAttachment3D = $"../../Armature/Skeleton3D/DowncastAttachment"
 
-@export var land_thresh := 2
+@export var land_thresh := 1.126
 
 func _ready() -> void:
 	animation = "midair"
@@ -27,5 +27,9 @@ func check_relevance(input : InputPackage):
 
 
 func update(input, delta):
+	print("player velocity: ", player.velocity)
 	player.velocity.y -= gravity * delta
 	player.move_and_slide()
+
+func on_enter_state():
+	print("ENTER midair, velocity.y =", player.velocity.y)

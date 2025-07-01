@@ -19,4 +19,8 @@ func check_relevance(input : InputPackage):
 
 func update(input : InputPackage, delta ):
 	player.velocity.y -= gravity * delta
+	print("player velocity: ", player.velocity)
 	player.move_and_slide()
+
+func on_enter_state():
+	player.velocity = Vector3.ZERO

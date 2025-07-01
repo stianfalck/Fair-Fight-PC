@@ -11,6 +11,8 @@ func _ready() -> void:
 
 
 func check_relevance(input : InputPackage):
+	if not player.is_on_floor():
+		return "midair"
 	input.actions.sort_custom(sort_moves_by_weight)
 	if not input.actions[0] == "sprint":
 		return input.actions[0]

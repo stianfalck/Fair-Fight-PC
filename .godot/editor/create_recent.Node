@@ -1,7 +1,7 @@
+CSGSphere3D
 Node
 CSGCombiner3D
 BoneAttachment3D
-CSGSphere3D
 PhysicalBone3D
 RayCast3D
 CSGBox3D

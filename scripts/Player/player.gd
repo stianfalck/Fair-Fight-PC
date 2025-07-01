@@ -14,10 +14,7 @@ var lerp_speed = 10.0
 
 func _ready() -> void:
 	player_visuals.accept_skeleton(model.skeleton)
-	model.animation_player.play("idle_2")
-	
-	
-	
+
 
 
 func _physics_process(delta):

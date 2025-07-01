@@ -21,8 +21,16 @@ func check_relevance(input : InputPackage):
 
 
 func update(_input : InputPackage, delta ):
+	print("player velocity: ", player.velocity)
 	if works_longer_than(JUMP_TIMING):
 		if not jumped:
 			player.velocity.y += jump_velocity
 			jumped = true
 	player.move_and_slide()
+
+func on_enter_state():
+	print("ENTER jump, velocity.y =", player.velocity.y)
+	print("[JUMP] jumped variable in state '", self.name, "' on_enter: ", jumped)
+
+func on_exit_state():
+	print("[JUMP] jumped variable in state '", self.name, "' on_exit: ", jumped)

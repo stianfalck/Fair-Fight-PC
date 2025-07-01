@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1751346302
+::res://::1751362202
 icon.svg::CompressedTexture2D/CompressedTexture2D::2722442410290033817::1750339197::1750339204::1::::<><><>0<>0<>530db74f3d2ef7d28bbed340f0991cc7<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 README.md::TextFile/TextFile::-1::1751200055::0::1::::<><><>0<>0<><>::
 ::res://addons/::1751198635
@@ -9,11 +9,11 @@ plugin.cfg::TextFile/TextFile::-1::1751198635::0::1::::<><><>0<>0<><>::
 THIRDPARTY.md::TextFile/TextFile::-1::1751198978::0::1::::<><><>0<>0<><>::
 ::res://addons/godot-git-plugin/linux/::1751198635
 ::res://addons/godot-git-plugin/macos/::1751198635
-::res://addons/godot-git-plugin/win64/::1751346295
+::res://addons/godot-git-plugin/win64/::1751362194
 ::res://assets/::1750913943
 ::res://assets/animations/::1750913951
-::res://assets/animations/general movement/::1751267233
-anim_lib_gen_mov.res::AnimationLibrary::6758226964997800896::1751266740::0::1::::<><><>0<>0<><>::uid://cfrgvhdx7ytg4::::res://assets/animations/general movement/crouch_idle.res<>uid://b06rr82ogr65x::::res://assets/animations/general movement/fall_to_roll.res<>uid://r5k5824w0ein::::res://assets/animations/general movement/fall_to_roll_no_y_delta.res<>uid://4kepc2wdpsgi::::res://assets/animations/general movement/full_jump.res<>uid://cyhx2tg6a6rwq::::res://assets/animations/general movement/full_jump_no_y_delta.res<>uid://b00ln8sxv6u7d::::res://assets/animations/general movement/hard_landing.res<>uid://d2qa7hkfgfkc5::::res://assets/animations/general movement/idle_1.res<>uid://bfufpf6siyfyj::::res://assets/animations/general movement/idle_2.res<>uid://cax84nsowujvu::::res://assets/animations/general movement/idle_3.res<>uid://dtjxejl4na40o::::res://assets/animations/general movement/jump_start.res<>uid://dycd1kvmtp8rw::::res://assets/animations/general movement/midair.res<>uid://ddubnuw7utwdu::::res://assets/animations/general movement/run_to_stop.res<>uid://cr7h4nfh4vaqn::::res://assets/animations/general movement/run_to_stop_no_root_motion.res<>uid://bdgv1ey3kw507::::res://assets/animations/general movement/sneak_forward.res<>uid://bujrx0vmaghtd::::res://assets/animations/general movement/walk.res<>uid://dsc7abv6binji::::res://assets/animations/general movement/run.res<>uid://c5cv0kr4knhf4::::res://assets/animations/general movement/fast_run.res<>uid://b8dlg7grrotdd::::res://assets/animations/general movement/run_jump.res<>uid://qgpblicgymu6::::res://assets/animations/general movement/run_jump_no_y_delta.res<>uid://chmlgf8p38qeu::::res://assets/animations/general movement/run_jump_landing.res<>uid://hapav5t6fupx::::res://assets/animations/general movement/run_jump_start.res
+::res://assets/animations/general movement/::1751346309
+anim_lib_gen_mov.res::AnimationLibrary::6758226964997800896::1751346309::0::1::::<><><>0<>0<><>::uid://cfrgvhdx7ytg4::::res://assets/animations/general movement/crouch_idle.res<>uid://b06rr82ogr65x::::res://assets/animations/general movement/fall_to_roll.res<>uid://r5k5824w0ein::::res://assets/animations/general movement/fall_to_roll_no_y_delta.res<>uid://4kepc2wdpsgi::::res://assets/animations/general movement/full_jump.res<>uid://cyhx2tg6a6rwq::::res://assets/animations/general movement/full_jump_no_y_delta.res<>uid://b00ln8sxv6u7d::::res://assets/animations/general movement/hard_landing.res<>uid://d2qa7hkfgfkc5::::res://assets/animations/general movement/idle_1.res<>uid://bfufpf6siyfyj::::res://assets/animations/general movement/idle_2.res<>uid://cax84nsowujvu::::res://assets/animations/general movement/idle_3.res<>uid://dtjxejl4na40o::::res://assets/animations/general movement/jump_start.res<>uid://dycd1kvmtp8rw::::res://assets/animations/general movement/midair.res<>uid://ddubnuw7utwdu::::res://assets/animations/general movement/run_to_stop.res<>uid://cr7h4nfh4vaqn::::res://assets/animations/general movement/run_to_stop_no_root_motion.res<>uid://bdgv1ey3kw507::::res://assets/animations/general movement/sneak_forward.res<>uid://bujrx0vmaghtd::::res://assets/animations/general movement/walk.res<>uid://dsc7abv6binji::::res://assets/animations/general movement/run.res<>uid://c5cv0kr4knhf4::::res://assets/animations/general movement/fast_run.res<>uid://b8dlg7grrotdd::::res://assets/animations/general movement/run_jump.res<>uid://qgpblicgymu6::::res://assets/animations/general movement/run_jump_no_y_delta.res<>uid://chmlgf8p38qeu::::res://assets/animations/general movement/run_jump_landing.res<>uid://hapav5t6fupx::::res://assets/animations/general movement/run_jump_start.res
 crouch_idle.res::Animation/Animation::5159282184410589077::1750914371::0::1::::<><><>0<>0<><>::
 fall_to_roll.res::Animation/Animation::4206201808018269815::1750914371::0::1::::<><><>0<>0<><>::
 fall_to_roll_no_y_delta.res::Animation/Animation::1255804194541443509::1750914371::0::1::::<><><>0<>0<><>::
@@ -26,9 +26,9 @@ idle_2.res::Animation/Animation::2778983140172030093::1750914371::0::1::::<><><>
 idle_3.res::Animation/Animation::4822378215790436162::1750914371::0::1::::<><><>0<>0<><>::
 jump_start.res::Animation/Animation::8512833605035738628::1750914371::0::1::::<><><>0<>0<><>::
 midair.res::Animation/Animation::8848152193765664580::1751196466::0::1::::<><><>0<>0<><>::
-run.res::Animation::8428733022214939614::1751266740::0::1::::<><><>0<>0<><>::
+run.res::Animation::8428733022214939614::1751346309::0::1::::<><><>0<>0<><>::
 run_jump.res::Animation/Animation::4709525949505932885::1750921278::0::1::::<><><>0<>0<><>::
-run_jump_landing.res::Animation::5289614721900567492::1751267233::0::1::::<><><>0<>0<><>::
+run_jump_landing.res::Animation/Animation::5289614721900567492::1751267233::0::1::::<><><>0<>0<><>::
 run_jump_no_y_delta.res::Animation/Animation::1136320895633412311::1750919522::0::1::::<><><>0<>0<><>::
 run_jump_start.res::Animation/Animation::492233810597128797::1751207040::0::1::::<><><>0<>0<><>::
 run_to_stop.res::Animation/Animation::7411201155322258602::1750914371::0::1::::<><><>0<>0<><>::
@@ -204,30 +204,30 @@ citrus_orchard_puresky_4k.exr::CompressedTexture2D/CompressedTexture2D::68773319
 ::res://assets/Templates/Node/::1750679437
 NewMove.gd::GDScript/GDScript::7810584678377677979::1750679437::0::1::::NewMove<>MovementState<><>0<>0<><>::
 ::res://design resources/::1751200110
-::res://scenes/::1751270165
-main.tscn::PackedScene::1055581530759240507::1751270107::0::1::::<><><>0<>0<><>::uid://cmykq7ibr0v6f::::res://assets/retro urban obj/Textures/metal.png<>uid://c685amjith63b::::res://scenes/Player.tscn<>uid://bd1upf2g84wqi::::res://assets/retro urban obj/Textures/dirt.png
-Player.tscn::PackedScene::7018642140404799709::1751270107::0::1::::<><><>0<>0<><>::uid://dihqhbc2lwmf5::::res://scripts/Player/player.gd<>uid://yywldhu43ln::::res://scenes/PlayerVisuals.tscn<>uid://dyuknj28c0a2d::::res://scripts/Player/input.gd<>uid://b1qga1ann3y2e::::res://scenes/PlayerModel.tscn<>uid://3dnshn12dcyb::::res://scripts/Player/CameraController.gd
-PlayerModel.tscn::PackedScene::4244726330519764042::1751270165::0::1::::<><><>0<>0<><>::uid://bc4nl8qlaf5xd::::res://scripts/Player/PlayerModel.gd<>uid://odkfs768mh5j::::res://scripts/Player/moves/idle.gd<>uid://dgqdcgy341d8u::::res://scripts/Player/AnimationPlayer.gd<>uid://b2ambmf4q4mg5::::res://scripts/Player/moves/run.gd<>uid://kxs0f8e60yim::::res://scripts/Player/moves/jump.gd<>uid://dp566yn8h3hpl::::res://scripts/Player/moves/midair.gd<>uid://cyedtldil8g7x::::res://scripts/Player/moves/sprint.gd<>uid://bnviurdfqwe3l::::res://scripts/Player/moves/sprint_jump.gd<>uid://c3j0amnreo5yi::::res://assets/animations/general movement/anim_lib_gen_mov.res<>uid://dwligv7ahh2r6::::res://scripts/Player/moves/jump_landing.gd<>uid://di5eq0pcgd86k::::res://scripts/Player/Downcast.gd<>uid://bpsidkuiyyva5::::res://scripts/Player/moves/sprint_jump_landing.gd
-PlayerVisuals.tscn::PackedScene::51042144126949563::1751270107::0::1::::<><><>0<>0<><>::uid://cdbluoqntbajc::::res://scripts/Player/PlayerVisuals.gd
+::res://scenes/::1751350196
+main.tscn::PackedScene::1055581530759240507::1751350123::0::1::::<><><>0<>0<><>::uid://cmykq7ibr0v6f::::res://assets/retro urban obj/Textures/metal.png<>uid://c685amjith63b::::res://scenes/Player.tscn<>uid://bd1upf2g84wqi::::res://assets/retro urban obj/Textures/dirt.png
+Player.tscn::PackedScene::7018642140404799709::1751350123::0::1::::<><><>0<>0<><>::uid://dihqhbc2lwmf5::::res://scripts/Player/player.gd<>uid://yywldhu43ln::::res://scenes/PlayerVisuals.tscn<>uid://dyuknj28c0a2d::::res://scripts/Player/input.gd<>uid://b1qga1ann3y2e::::res://scenes/PlayerModel.tscn<>uid://3dnshn12dcyb::::res://scripts/Player/CameraController.gd
+PlayerModel.tscn::PackedScene::4244726330519764042::1751350196::0::1::::<><><>0<>0<><>::uid://bc4nl8qlaf5xd::::res://scripts/Player/PlayerModel.gd<>uid://odkfs768mh5j::::res://scripts/Player/moves/idle.gd<>uid://dgqdcgy341d8u::::res://scripts/Player/AnimationPlayer.gd<>uid://b2ambmf4q4mg5::::res://scripts/Player/moves/run.gd<>uid://kxs0f8e60yim::::res://scripts/Player/moves/jump.gd<>uid://dp566yn8h3hpl::::res://scripts/Player/moves/midair.gd<>uid://cyedtldil8g7x::::res://scripts/Player/moves/sprint.gd<>uid://bnviurdfqwe3l::::res://scripts/Player/moves/sprint_jump.gd<>uid://c3j0amnreo5yi::::res://assets/animations/general movement/anim_lib_gen_mov.res<>uid://dwligv7ahh2r6::::res://scripts/Player/moves/jump_landing.gd<>uid://di5eq0pcgd86k::::res://scripts/Player/Downcast.gd<>uid://bpsidkuiyyva5::::res://scripts/Player/moves/sprint_jump_landing.gd
+PlayerVisuals.tscn::PackedScene::51042144126949563::1751350123::0::1::::<><><>0<>0<><>::uid://cdbluoqntbajc::::res://scripts/Player/PlayerVisuals.gd
 ::res://scripts/::1750496426
 ugly_player_controller.gd::GDScript/GDScript::1225404523335491916::1750496426::0::1::::<>CharacterBody3D<><>0<>0<><>::
-::res://scripts/Player/::1751267244
-AnimationPlayer.gd::GDScript::7613611233065942050::1751267244::0::1::::<>AnimationPlayer<><>0<>0<><>::
+::res://scripts/Player/::1751346926
+AnimationPlayer.gd::GDScript/GDScript::7613611233065942050::1751267244::0::1::::<>AnimationPlayer<><>0<>0<><>::
 CameraController.gd::GDScript/GDScript::1972302609286769793::1750917002::0::1::::CameraController<>Node<><>0<>0<><>::
 Downcast.gd::GDScript/GDScript::7782976909833765540::1751220457::0::1::::<>RayCast3D<><>0<>0<><>::
 input.gd::GDScript/GDScript::8885712754644599905::1751225365::0::1::::InputGatherer<>Node<><>0<>0<><>::
 InputPackage.gd::GDScript/GDScript::4884594475830253985::1750665840::0::1::::InputPackage<>Node<><>0<>0<><>::
 player.gd::GDScript/GDScript::7736207473758872248::1751195442::0::1::::<>CharacterBody3D<><>0<>0<><>::
-PlayerModel.gd::GDScript/GDScript::2587476048963264273::1751225356::0::1::::PlayerModel<>Node<><>0<>0<><>::
+PlayerModel.gd::GDScript::2587476048963264273::1751346926::0::1::::PlayerModel<>Node<><>0<>0<><>::
 PlayerVisuals.gd::GDScript/GDScript::4986176639512751244::1750671938::0::1::::<>Node3D<><>0<>0<><>::
-::res://scripts/Player/moves/::1751270107
+::res://scripts/Player/moves/::1751350122
 halt.gd::GDScript/GDScript::1548295853305745048::1751225285::0::1::::Halt<>MovementState<><>0<>0<><>::
 idle.gd::GDScript/GDScript::989454039398943729::1751225433::0::1::::Idle<>MovementState<><>0<>0<><>::
-jump.gd::GDScript::750506989260592628::1751269668::0::1::::Jump<>MovementState<><>0<>0<><>::
+jump.gd::GDScript::750506989260592628::1751349580::0::1::::Jump<>MovementState<><>0<>0<><>::
 jump_landing.gd::GDScript/GDScript::8726622369549989877::1751225046::0::1::::JumpLanding<>MovementState<><>0<>0<><>::
-midair.gd::GDScript::8275964906811087701::1751270107::0::1::::Midair<>MovementState<><>0<>0<><>::
-MovementState.gd::GDScript::3113021443264159563::1751270037::0::1::::MovementState<>Node<><>0<>0<><>::
+midair.gd::GDScript::8275964906811087701::1751348412::0::1::::Midair<>MovementState<><>0<>0<><>::
+MovementState.gd::GDScript::3113021443264159563::1751346899::0::1::::MovementState<>Node<><>0<>0<><>::
 run.gd::GDScript/GDScript::4282250490971464290::1751198121::0::1::::Run<>MovementState<><>0<>0<><>::
 sprint.gd::GDScript/GDScript::6465847789548463847::1751198124::0::1::::Sprint<>MovementState<><>0<>0<><>::
-sprint_jump.gd::GDScript/GDScript::3342749933423801443::1751206746::0::1::::SprintJump<>MovementState<><>0<>0<><>::
-sprint_jump_landing.gd::GDScript::3476903787686622002::1751267058::0::1::::SprintJumpLanding<>MovementState<><>0<>0<><>::
+sprint_jump.gd::GDScript::3342749933423801443::1751350122::0::1::::SprintJump<>MovementState<><>0<>0<><>::
+sprint_jump_landing.gd::GDScript/GDScript::3476903787686622002::1751267058::0::1::::SprintJumpLanding<>MovementState<><>0<>0<><>::

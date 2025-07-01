@@ -53,3 +53,4 @@ size = Vector3(6.65234, 0.932129, 4.28467)
 material = SubResource("StandardMaterial3D_jyhfs")
 
 [node name="Player" parent="." instance=ExtResource("2_0wfyh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.50533, 0)

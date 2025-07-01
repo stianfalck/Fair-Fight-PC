@@ -20,6 +20,7 @@ func check_relevance(input : InputPackage):
 # Step 4: decide what happens in state
 func update(input : InputPackage, delta : float):
 	player.velocity.y -= gravity * delta
+	print("player velocity: ", player.velocity)
 	player.move_and_slide()
 
 

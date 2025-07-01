@@ -1,0 +1,26 @@
+TODO:
+	
+	- Refine all animations once full moveset is designed
+		- includes octogonal direction animations for:
+			* walk
+			* run
+			* sprint
+			* crouch
+			* crawl
+			* all jumps
+
+
+BUGS:
+	
+	25-07-01
+	- When player lands on some edge and keeps horisontal velocity during landing,
+		player will quickly enter IDLE state and remove all velocity (0,0,0).
+		 This can result in player coming to an abrupt halt mid-air, which looks bad
+	
+	- Horisontal velocity is kept when entering landing states, which, in some cases,
+		is not desired.
+	
+	- Quickly doing a 180 after landing while holding 'W', then jumping again 
+		will make the player jump backwards.
+		 Player should jump in direction of key press
+		

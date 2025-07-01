@@ -5,6 +5,14 @@ res://scenes/Player.tscn
 res://scenes/PlayerVisuals.tscn
 res://scenes/PlayerModel.tscn
 res://scripts/Player/moves/sprint_jump.gd
-res://scripts/Player/moves/MovementState.gd
+res://scripts/Player/moves/jump.gd
 res://scripts/Player/moves/midair.gd
 res://scripts/Player/PlayerModel.gd
+res://scripts/Player/player.gd
+res://scripts/Player/moves/idle.gd
+res://scripts/Player/AnimationPlayer.gd
+res://scripts/Player/moves/run.gd
+res://scripts/Player/moves/sprint.gd
+res://scripts/Player/moves/jump_landing.gd
+res://scripts/Player/moves/sprint_jump_landing.gd
+res://scripts/Player/moves/notes.txt
